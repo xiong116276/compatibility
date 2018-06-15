@@ -1,0 +1,108 @@
+@charset "utf-8";
+%bg-htc{
+  -ms-behavior: url('./htc/backgroundsize.min.htc');
+  behavior:url('./htc/backgroundsize.min.htc');
+}
+%pie-htc{
+  -ms-behavior: url("./htc/pie.php");
+  behavior: url("./htc/pie.php");
+}
+
+.top-search-hide {
+  //background-size
+  #logo_2{
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://shop.dgsjyyy.com/resources/shop/images/logo.png', sizingMethod='scale')
+    //@extend %bg-htc;
+  }
+}
+.icon-more{
+  @extend %bg-htc;
+}
+//swiper2.x 前进后退按钮
+.swiper-container{
+
+  //导航小圆点border-radius rgba();
+  .swiper-pagination-switch {
+    background-color: rgba(4,170,88,0.2);
+    -pie-background: rgba(4,170,88,0.2);
+    border-radius: 50%;//圆角
+    &.swiper-active-switch {
+      background-color: rgba(4,170,88,1);
+      -pie-background: rgba(4,170,88,1);
+    }
+    @extend %pie-htc;
+  }
+}
+
+//列表商品
+.goods-list-container-new {
+  //transform
+  .search-condition {
+    .item-choose {
+      .btn-take-up{
+        &.active{
+          &:after{
+            -ms-filter:progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
+            filter:progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand');
+          }
+        }
+      }
+    }
+  }
+  //box-shadow
+  .show-goods-content {
+    .goods-item{
+      background-color: #fff;
+      &:hover{
+        -moz-box-shadow: 0 0 10px 5px #eaeaea;
+        -webkit-box-shadow: 0 0 10px 5px #eaeaea;
+        box-shadow: 0 0 10px 5px #eaeaea;
+      }
+      @extend %pie-htc;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
